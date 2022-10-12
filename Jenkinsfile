@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git 'https://github.com/snuuffy/Frontend'
+                checkout scm
             }
         }
         
